@@ -26,8 +26,10 @@ function App() {
         <div className='book'>
           {output.map((value) => {
             return <div>
-              <img className='books-info' alt='books'
-                src={value.volumeInfo.imageLinks.thumbnail} />
+              <img className='books-info' alt='books' 
+                src={value.volumeInfo.imageLinks.thumbnail} 
+                // src={value.searchInfo.selfLink} 
+                />
             </div>
           })}
         </div>
