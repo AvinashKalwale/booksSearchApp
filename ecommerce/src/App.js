@@ -7,11 +7,13 @@ function App() {
   const [books, SetBooks] = useState()
   const [output, setOutput] = useState([])
 
-  const changeBooks = () => {
+  const changeBooks = () =>
+  // for(let i=0;i<9;i++) {
+    {
     axios.get('https://www.googleapis.com/books/v1/volumes?q={books}')
       .then((res) => {
         console.log(res)
-        setOutput(res.data.items)
+         setOutput(res.data.items)
       })
   }
 
@@ -26,7 +28,7 @@ function App() {
         <div className='book'>
           {output.map((value) => {
             return <div>
-              <img alt='books' src={value.url} />
+              <img id='books-info' alt='books' src={value.url} />
             </div>
           })}
         </div>
@@ -34,5 +36,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
