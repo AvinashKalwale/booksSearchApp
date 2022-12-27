@@ -64,13 +64,20 @@ button {
 }
 
 .container {
-  height: 100vh;
+  height:400vh;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6dgEbkYiE_RA5VEO_omzq8j4C91h7hAREVA&usqp=CAU');
 }
 
-#books-info:hover{
+.books-info{
+  float:left;
+  width: 30.33%;
+  height: 500px;
+  margin: 19px;
+}
+
+.books-info:hover{
   box-shadow: 5px 5px 5px 5px gray;
-  margin: 10px;
+  /* margin: 10px;
   height: 400px;
-  width: 400px;
+  width: 400px; */
 }
